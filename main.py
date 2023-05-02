@@ -41,21 +41,6 @@ def func(seq_A, seq_B):
     return C
 
 
-# Simpler second function time complexity O(n^2 * sqrt(n))
-def second_func(seq_A, seq_B):
-    C = []
-
-    for num_a in seq_A:
-        counter = 0
-
-        for num_b in seq_B:
-            if num_a == num_b:
-                counter += 1
-
-        if not is_prime(counter):
-            C.append(num_a)
-
-
 # Execution
 print("Starting function execution...")
 start_time = time.time()
